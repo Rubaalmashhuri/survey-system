@@ -8,4 +8,21 @@ public class Controller {
         surveys.add(survey);
         System.out.println(surveyName +" survey, has been created..");
     }
+
+    public void addQuestionToSurvey(String surveyName, String questionTxt){
+        boolean isAdded = false;
+        for (Survey survey:surveys
+        ) {
+            if (survey.getName().equalsIgnoreCase(surveyName)){
+                Question question = new Question(surveyName, questionTxt);
+                ArrayList<Question> questions =  survey.getQuestions();
+                questions.add(question);
+                survey.setQuestions(questions);
+                System.out.println("Question added into survey '" + surveyName+"'");
+                isAdded = true;
+                break;
+            }
+        }
+        if (!isAdded) System.out.println("The survey '"+ surveyName+ "' is not added into the list");
+    }
 }
