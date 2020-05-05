@@ -1,15 +1,17 @@
-import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
+
 
 public class ControllerTest {
 
     private Controller controller;
 
-    @org.junit.Before
+    @Before
     public void setUp() throws Exception {
         controller = new Controller();
     }
 
-    @org.junit.Test
+    @Test
     public void createSurvey() {
         controller.createSurvey("Evaluation");
     }
