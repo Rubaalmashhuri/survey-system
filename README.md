@@ -19,7 +19,7 @@ so the time might vary from task to another due to thier difficulty. As a compar
 The most important measure that an Agile team will use in planning is its “Velocity”. It is the amount of work finished by the team in each sprint. It helps the team to identify how much progress they can aim to make in a given sprint. Velocity is calculated by adding all the story points given to each user story that is completed by the end of the sprint. It measures output, but not the outcome.
 
 The steps involved in Velocity-based Sprint Planning are as follows:
-*Calculate the team’s average velocity (from last 3 Sprints)
-*Select the items from the product backlog equal to the average velocity
-*Verify whether the tasks associated with the selected user stories are appropriate for the particular sprint
-*Estimate the tasks and check if the total work is consistent with past sprints
+* Calculate the team’s average velocity (from last 3 Sprints)
+* Select the items from the product backlog equal to the average velocity
+* Verify whether the tasks associated with the selected user stories are appropriate for the particular sprint
+* Estimate the tasks and check if the total work is consistent with past sprints
