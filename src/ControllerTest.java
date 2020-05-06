@@ -43,4 +43,11 @@ public class ControllerTest {
         }
 
     }
+
+    @Test
+    public void getSpecificSurveys(){
+        Survey survey = controller.getSpecificSurvey("Evaluation");
+        if(survey != null)
+            System.out.println(survey.getName());
+    }
 }

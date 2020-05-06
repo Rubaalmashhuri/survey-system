@@ -30,6 +30,15 @@ public class Controller {
         return surveys;
     }
 
+    public Survey getSpecificSurvey(String surveyName){
+        for (Survey survey: surveys
+        ) {
+            if (survey.getName().equalsIgnoreCase(surveyName))
+                return survey;
+        }
+        return null;
+    }
+
     public void createSurveyResponse(ArrayList<Question> questions , String surveyName) {
         SurveyResponse response = new SurveyResponse( surveyName,questions );
         for (Survey survey: surveys
