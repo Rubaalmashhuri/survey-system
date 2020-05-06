@@ -25,4 +25,21 @@ public class Controller {
         }
         if (!isAdded) System.out.println("The survey '"+ surveyName+ "' is not added into the list");
     }
+
+    public ArrayList<Survey> getSurveys(){
+        return surveys;
+    }
+
+    public void createSurveyResponse(ArrayList<Question> questions , String surveyName) {
+        SurveyResponse response = new SurveyResponse( surveyName,questions );
+        for (Survey survey: surveys
+        ) {
+            if (survey.getName().equalsIgnoreCase(surveyName)){
+                ArrayList<SurveyResponse> responses = survey.getSurveyResponses();
+                responses.add(response);
+                survey.setSurveyResponses(responses);
+            }
+        }
+    }
+
 }
