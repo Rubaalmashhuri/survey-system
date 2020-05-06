@@ -3,10 +3,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Survey {
 
-    private int currentId ;
-    private static AtomicInteger id = new AtomicInteger(0);
-    private ArrayList<Question> questions = new ArrayList<>();
-    private String name;
+    int currentId ;
+    static AtomicInteger id = new AtomicInteger(0);
+    ArrayList<Question> questions = new ArrayList<>();
+    String name;
+    ArrayList<SurveyResponse> surveyResponses = new ArrayList<>();
 
     public Survey(String name) {
         this.name = name;
@@ -34,5 +35,11 @@ public class Survey {
         return id.incrementAndGet();
     }
 
+    public ArrayList<SurveyResponse> getSurveyResponses() {
+        return surveyResponses;
+    }
 
+    public void setSurveyResponses(ArrayList<SurveyResponse> surveyResponses) {
+        this.surveyResponses = surveyResponses;
+    }
 }

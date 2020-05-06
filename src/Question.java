@@ -1,11 +1,8 @@
 public class Question {
 
-
-    private String question ;
-    private int answer;
+    String question ;
+    int answer;
     String surveyName ;
-
-
 
     public Question(String surveyName, String question) {
         this.question = question;
