@@ -50,4 +50,17 @@ public class ControllerTest {
         if(survey != null)
             System.out.println(survey.getName());
     }
+
+    @Test
+    public void surveyCalculationSummary(){
+        int min = controller.surveyMinRate("Evaluation");
+        int avg = controller.surveyAverageRate("Evaluation");
+        int max = controller.maxSurveyRate("Evaluation");
+        int standardDivation = controller.calcStandardDeviation("Evaluation");
+
+        System.out.println("minimum rate: " + min);
+        System.out.println("maximum rate: " + max);
+        System.out.println("average rate: " + avg);
+        System.out.println("standard divation: " + standardDivation);
+    }
 }
