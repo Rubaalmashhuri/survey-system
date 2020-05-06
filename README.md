@@ -24,12 +24,12 @@ The steps involved in Velocity-based Sprint Planning are as follows:
 * Verify whether the tasks associated with the selected user stories are appropriate for the particular sprint
 * Estimate the tasks and check if the total work is consistent with past sprints
 
-## Unit tes!ng and Test-Driven development
+## Unit tesing and Test-Driven development
 each commit in the branches has a test method/s, which means that each commitis tested and the next commit content is not written before testing the previous code.
 taking 'add-question' commit as an example, Controller class has the method of adding a question into a survey, and the class of ControllerTest applies the JUnit test of the method.
 
 ## Test coverage metric
-the used tool wa 'IntelliJ IDEA code coverage runner', link to the sreenshot of applying the tool ![Code coverage tool] (https://github.com/Rubaalmashhuri/survey-system/blob/master/codeCoverage.PNG)
+the used tool wa 'IntelliJ IDEA code coverage runner', link to the sreenshot of applying the tool (https://github.com/Rubaalmashhuri/survey-system/blob/master/codeCoverage.PNG)
 
 ## Team version-control
 The process that were followed for version control was GitFlow, there was two local branches (master and develop),
