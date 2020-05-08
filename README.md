@@ -47,3 +47,13 @@ a feature branches have been created of the develop branh.
 each feature brance were merged to develop and published on the remote repo, and the released code were merged to branch master..
 
 ## Code-review checklist
+* Don't Repeat Yourself (Avoid Duplication) 
+  in the methods surveyMaxRate and min and average you need to extraxt  method with the duplicated code
+* You need to set private property to initaized varaible in Survey, Question and SurveyResponse classes
+* Remove unused variable "int average = 0" in Controller class surveyAverageRate method
+* Explain yourself in code: you need to add comments to have a understandable code
+* Always override toString 
+
+
+  
+
