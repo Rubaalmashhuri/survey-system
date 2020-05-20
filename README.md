@@ -29,7 +29,7 @@ each commit in the branches has a test method/s, which means that each commitis 
 taking 'add-question' commit as an example, Controller class has the method of adding a question into a survey, and the class of ControllerTest applies the JUnit test of the method.
 
 ## Test coverage metric
-the used tool was ' JUnit Test Case in Eclipse', link to the sreenshot of applying the tool (https://github.com/Rubaalmashhuri/survey-system/blob/master/CodeCoverage.PNG)
+the used tool was ' JUnit Test Case in Eclipse', link to the sreenshot of applying the tool (https://github.com/Rubaalmashhuri/survey-system/blob/master/CodeCoverage.png)
 
 ## Team version-control
 The process that were followed for version control was GitFlow, there was two local branches (master and develop),
